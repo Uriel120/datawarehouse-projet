@@ -25,6 +25,7 @@ set -euo pipefail
 # 1. Charger les variables d’environnement -----------------------------
 # Le fichier .env doit contenir : PASSWORD
 source "$(dirname "$0")/../.env"
+file=$1
 
 : "${password:?Variable password manquante dans .env}"   # vérification
 if [[ -z "$password" ]]; then
@@ -70,7 +71,7 @@ vers le conteneur sqlserver dans le répertoire racine (/).
 EOF
 
 echo "Copie du fichier SQL dans le conteneur..."
-docker cp ./init_database.sql sqlserver:/init_database.sql
+docker cp ./$file sqlserver:/$file
 
 # 3. Exécuter le script -------------------------------------------------
 
@@ -92,7 +93,7 @@ docker exec -i sqlserver /opt/mssql-tools18/bin/sqlcmd \
     -C \
     -U sa -P "$password" \
     -d master \
-    -i /init_database.sql
+    -i /$file
 
 echo "Script terminé."
 
