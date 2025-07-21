@@ -53,7 +53,7 @@ Cette section copie le script SQL dans le conteneur et l'exécute.
 Options sqlcmd utilisées :
 - -S : Spécifie le serveur et le port de connexion
 - -C : Accepte les certificats auto-signés (nécessaire pour les conteneurs)
-- -U : Nom d'utilisateur SQL Server (sa = System Administrator)
+- -U : Nom d'utilisateur SQL Server 
 - -P : Mot de passe pour l'utilisateur
 - -d : Base de données cible (master pour les opérations administratives)
 - -i : Fichier d'entrée contenant les commandes SQL à exécuter
@@ -83,7 +83,6 @@ La connexion se fait via localhost avec le port spécifié dans .env.
 Important :
 - L'option -C est cruciale pour accepter les certificats auto-signés
 - Le port doit être explicitement spécifié pour éviter les problèmes de connexion
-- L'utilisateur 'sa' est l'administrateur système par défaut de SQL Server
 EOF
 
 

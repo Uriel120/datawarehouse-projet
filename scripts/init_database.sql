@@ -7,6 +7,14 @@ Ce fichier est utilisé pour initialiser la base de données SQL Server dans le 
 
 Objectif du script :
 
+Ce script crée la base de données DataWarehouse et les schémas bronze, silver et gold si ils n'existent pas déjà.
+
+
+Attention :
+
+- Les schémas bronze, silver et gold sont utilisés pour organiser les données dans le Data Warehouse selon les principes de la méthodologie médaillon.
+- Si la base de données ou les schémas existent déjà, le script ne les recrée pas et affiche un message d'information.
+
 
 */
 
