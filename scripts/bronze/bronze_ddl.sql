@@ -13,6 +13,8 @@ bronze, silver et gold dans la base de données DataWarehouse.
 Attention :
 - Les tables créées dans ce script sont destinées à stocker les données brutes avant leur transformation et leur enrichissement.
 - Assurez-vous que le schema bronze n'exite pas déjà avant d'exécuter ce script, ou faites un backup de vos données existantes car ce script va supprimer les tables existantes.
+
+======================================================================================================
 */
 
 

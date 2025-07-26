@@ -1,3 +1,26 @@
+/*
+========================================================================================================
+    Script de chargement des données dans le schéma bronze
+========================================================================================================
+
+Objectif du script :
+Ce script est conçu pour charger les données brutes dans les tables du schéma bronze du Data Warehouse.
+Il utilise la commande BULK INSERT pour importer les données à partir de fichiers CSV situés dans le répertoire /home.
+
+Attention :
+- Assurez-vous que les fichiers CSV existent dans le répertoire /home du conteneur
+- Les tables doivent être créées avant d'exécuter ce script.
+- Les données existantes dans les tables seront supprimées avant l'insertion des nouvelles données.
+
+Paramètres :
+- pas de paramètres requis pour ce script.
+
+========================================================================================================
+*/
+
+
+
+
 USE [DataWarehouse];
 GO
 
@@ -105,5 +128,6 @@ BEGIN
         PRINT 'Ligne de l''erreur : ' + CAST(ERROR_LINE() AS NVARCHAR(10));
     END CATCH
 END;
+GO
 
 EXEC [bronze].[load_bronze];
