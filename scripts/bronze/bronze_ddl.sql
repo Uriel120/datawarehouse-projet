@@ -81,7 +81,7 @@ GO
 IF OBJECT_ID('bronze.erp_px_cat_g1v2','U') IS NOT NULL
     DROP TABLE bronze.erp_px_cat_g1v2;
 CREATE TABLE bronze.erp_px_cat_g1v2 (
-    px_cat_id INT,
+    px_cat_id NVARCHAR(10),
     cat NVARCHAR(50),
     subcat NVARCHAR(50),
     maintenance VARCHAR(10)
