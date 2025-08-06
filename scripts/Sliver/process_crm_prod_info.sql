@@ -15,7 +15,6 @@ ATTENTION:
     3. Ensures that product keys are formatted correctly and that product lines are categorized.
     4. Handles null values and ensures date integrity.
 
-
 */
 
 
@@ -51,6 +50,3 @@ SELECT
         AS DATE
     ) AS prd_end_dt
 FROM bronze.crm_prod_info
-
-SELECT TOP 10 *
-FROM silver.crm_prod_info;
