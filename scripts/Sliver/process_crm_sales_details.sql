@@ -1,3 +1,21 @@
+/*
+------------------------------------------------------------------------------------
+    Script Name: process_crm_sales_details.sql
+    Description: This script processes CRM sales details from the bronze layer to the silver layer. 
+    It ensures that the data is cleaned, formatted, and ready for analysis.
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+ATTENTION:
+    1. Truncates the silver.crm_sales_details table.
+    2. Inserts cleaned data from bronze.crm_sales_details into silver.crm_sales_details.
+    3. Validates and formats date fields.
+    4. Ensures sales, quantity, and price fields are consistent and coherent.
+    5. Handles null values appropriately.
+------------------------------------------------------------------------------------
+*/
+
+TRUNCATE TABLE silver.crm_sales_details;
+GO
 INSERT INTO silver.crm_sales_details (
     sls_ord_num,
     sls_prd_key,

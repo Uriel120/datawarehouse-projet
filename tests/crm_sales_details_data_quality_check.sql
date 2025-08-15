@@ -1,3 +1,15 @@
+/*
+-------------------------------------------------------------------------------
+-- File: crm_sales_details.sql
+-- Description: Tests for the silver.crm_sales_details table
+------------------------------------------------------------------------------- 
+Note: This script performs the following operations:
+1. Checks for additional spaces in varchar columns.
+2. Validates date fields to ensure they do not contain invalid values.
+3. Ensures that sales, quantity, and price fields are consistent and coherent.
+------------------------------------------------------------------------------- 
+*/
+
 USE [DataWarehouse];
 GO
 

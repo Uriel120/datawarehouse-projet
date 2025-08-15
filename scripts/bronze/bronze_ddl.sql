@@ -68,7 +68,7 @@ IF OBJECT_ID('bronze.erp_cust_az12','U') IS NOT NULL
 CREATE TABLE bronze.erp_cust_az12 (
     cid NVARCHAR(50),
     bdate DATE,
-    gen VARCHAR(10)
+    gen NVARCHAR(10)
 );
 GO
 

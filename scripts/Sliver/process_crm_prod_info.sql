@@ -18,6 +18,8 @@ ATTENTION:
 */
 
 
+TRUNCATE TABLE silver.crm_prod_info;
+GO
 
 INSERT INTO silver.crm_prod_info (
     prd_id,
