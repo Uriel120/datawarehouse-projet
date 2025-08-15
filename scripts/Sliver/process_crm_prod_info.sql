@@ -2,18 +2,18 @@
 --------------------------------------------------------------
 Project: Data Warehouse Project
 File: process_crm_prod_info.sql
-Description: This script processes product information from the bronze layer to the silver layer.
+Description: Ce script traite les informations produit de la couche bronze vers la couche argent.
 --------------------------------------------------------------  
 created by: TOFFE GOKALE MICHEL
 Date: 2023-10-01
 Version: 1.0
 --------------------------------------------------------------
-This script performs the following operations:
+Ce script effectue les opérations suivantes :
 ATTENTION:
-    1. Truncates the silver.crm_prod_info table.
-    2. Inserts cleaned data from bronze.crm_prod_info into silver.crm_prod_info.
-    3. Ensures that product keys are formatted correctly and that product lines are categorized.
-    4. Handles null values and ensures date integrity.
+    1. Truncate la table silver.crm_prod_info.
+    2. Insère les données nettoyées de bronze.crm_prod_info dans silver.crm_prod_info.
+    3. S'assure que les clés de produit sont correctement formatées et que les lignes de produit sont catégorisées.
+    4. Gère les valeurs nulles et garantit l'intégrité des dates.
 
 */
 

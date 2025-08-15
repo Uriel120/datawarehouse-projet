@@ -1,16 +1,16 @@
 /*
 --------------------------------------------------------------------------------------------
     Script Name: process_erp_px_cat_g1v2.sql
-    Description: Processes the px_cat_g1v2 data from bronze to silver layer.    
+    Description: Nettoie les données px_cat_g1v2 de la couche bronze vers la couche argent.
 ---------------------------------------------------------------------------------------------
     Created by: TOFFE GOKALE MICHEL
     Date: 2023-10-01
     Version: 1.0
 ---------------------------------------------------------------------------------------------
-    This script performs the following operations:
-    1. Truncates the silver.erp_px_cat_g1v2 table.
-    2. Inserts cleaned data from bronze.erp_px_cat_g1v2 into silver.erp_px_cat_g1v2.
-    3. remove carriage returns and line feeds from the maintenance column.
+    Ce script effectue les opérations suivantes :
+    1. Truncate la table silver.erp_px_cat_g1v2.
+    2. Insère les données nettoyées de bronze.erp_px_cat_g1v2 dans silver.erp_px_cat_g1v2.
+    3. Supprime les retours chariot et les sauts de ligne de la colonne maintenance.
 */
 
 

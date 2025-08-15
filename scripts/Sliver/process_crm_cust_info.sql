@@ -1,16 +1,15 @@
 /*
 ----------------------------------------------------------------------
 File: process_crm_cust_info.sql
-Description: This script processes customer information from the bronze layer to the silver layer.
+Description: Ce script traite les informations client de la couche bronze vers la couche argent.
 ----------------------------------------------------------------------
 Author: TOFFE GOKALE MICHEL
 Date: 2023-10-01
 Version: 1.0
 ----------------------------------------------------------------------
-This script performs the following operations:
-ATTENTION: 
-    1. Truncates the silver.crm_cust_info table.
-    2. Inserts cleaned data from bronze.crm_cust_info into silver.crm_cust_info.
+Ce script effectue les opérations suivantes :
+    1. Truncate la table silver.crm_cust_info.
+    2. Insère les données nettoyées de bronze.crm_cust_info dans silver.crm_cust_info.
 
 */
 

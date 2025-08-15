@@ -2,17 +2,17 @@
 
 ------------------------------------------------------------------------------------
     File Name: erp_px_cat_g1v2_data_quality_check.sql
-    Description: This script performs data quality checks on the silver.erp_px_cat_g1v2 table.  
+    Description: Ce script effectue des vérifications de qualité des données sur la table silver.erp_px_cat_g1v2.
 --------------------------------------------------------------------------------------
     Created by: TOFFE GOKALE MICHEL
     Date: 2023-10-01
     Version: 1.0
 --------------------------------------------------------------------------------------
-    This script performs the following operations:
-    1. Checks for duplicate px_cat_id values.
-    2. Validates the presence of additional spaces in px_cat_id.
-    3. Ensures the consistency of values in the cat, subcat, and maintenance columns.
-    4. Checks for the presence of carriage returns in px_cat_id.
+    ce script effectue les opérations suivantes:
+    1. Vérifie la duplication des valeurs px_cat_id.
+    2. Valide la présence d'espaces supplémentaires dans px_cat_id.
+    3. Assure la cohérence des valeurs dans les colonnes cat, subcat et maintenance.
+    4. Vérifie la présence de retours chariot dans px_cat_id.
 --------------------------------------------------------------------------------------
 */
 

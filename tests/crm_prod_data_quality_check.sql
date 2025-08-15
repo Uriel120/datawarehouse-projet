@@ -4,7 +4,7 @@
                     sliver.crm_prod_info data quality check
 =======================================================================================================
 
-This script checks the data quality of the silver.crm_prod_info table.
+Ce script vérifie la qualité des données de la table silver.crm_prod_info.
 */
 
 PRINT '---------------------------------- verifier la duplication ID  ----------------------------------';

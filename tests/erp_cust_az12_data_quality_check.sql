@@ -1,3 +1,21 @@
+/*
+-------------------------------------------------------------------------------
+ File: erp_cust_az12_data_quality_check.sql
+ Description: Ce script vérifie la qualité des données dans les tables bronze.erp_cust_az12 et silver.erp_cust_az12.
+ --------------------------------------------------------------------------------
+ Created by: TOFFE GOKALE MICHEL
+ Date: 2023-10-01
+ Version: 1.0
+ --------------------------------------------------------------------------------
+ ATTENTION:
+    1. Vérifie la duplication des ID dans les tables.
+    2. Vérifie la présence d'espaces supplémentaires dans les colonnes cid.
+    3. Vérifie la présence de valeurs futures dans la date d'anniversaire.
+    4. Vérifie les valeurs uniques dans le genre.
+    5. Vérifie la présence de retours chariot et de saut de ligne dans le genre.
+*/
+
+
 SELECT TOP 10 *
 FROM silver.erp_cust_az12;
 GO

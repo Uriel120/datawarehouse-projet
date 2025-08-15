@@ -1,10 +1,14 @@
 /*
 ----------------------------------------------------------------------------------------------
     File: process_erp_cust_az12.sql
-    Description: This script processes the ERP customer data from the bronze layer to the silver layer.
-    It cleans the customer ID, birth date, and  
- *Script to process ERP customer data from bronze to silver layer.
- * It cleans the customer ID, birth date, and gender fields.
+    Description: Ce script traite les données clients ERP de la couche bronze vers la couche argent.
+----------------------------------------------------------------------------------------------
+    Created by: TOFFE GOKALE MICHEL
+    Date: 2023-10-01
+    Version: 1.0
+----------------------------------------------------------------------------------------------
+    Ce script nettoie l'ID client, la date de naissance et le champ de genre.
+    il s'agit d'un script pour traiter les données clients ERP de la couche bronze vers la couche argent.
  */
 
 TRUNCATE TABLE silver.erp_cust_az12;

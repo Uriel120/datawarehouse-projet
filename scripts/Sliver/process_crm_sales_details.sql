@@ -1,16 +1,16 @@
 /*
 ------------------------------------------------------------------------------------
     Script Name: process_crm_sales_details.sql
-    Description: This script processes CRM sales details from the bronze layer to the silver layer. 
-    It ensures that the data is cleaned, formatted, and ready for analysis.
+    Description: Ce script traite les détails des ventes CRM de la couche bronze vers la couche argent.
+    Il s'assure que les données sont nettoyées, formatées et prêtes pour l'analyse.
 ------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------
 ATTENTION:
-    1. Truncates the silver.crm_sales_details table.
-    2. Inserts cleaned data from bronze.crm_sales_details into silver.crm_sales_details.
-    3. Validates and formats date fields.
-    4. Ensures sales, quantity, and price fields are consistent and coherent.
-    5. Handles null values appropriately.
+    1. Truncate la table silver.crm_sales_details.
+    2. Insère les données nettoyées de bronze.crm_sales_details dans silver.crm_sales_details.
+    3. Valide et formate les champs de date.
+    4. S'assure que les champs de vente, de quantité et de prix sont cohérents et cohérents.
+    5. Gère les valeurs nulles de manière appropriée.
 ------------------------------------------------------------------------------------
 */
 
@@ -29,7 +29,7 @@ INSERT INTO silver.crm_sales_details (
 )
 SELECT
     sls_ord_num,
-    sls_prd_key,
+    REPLACE(sls_prd_key, '-', '_') AS sls_prd_key,
     sls_cust_id,
     CASE WHEN LEN(sls_order_dt) != 8 OR sls_order_dt <= 0 
             THEN NULL 

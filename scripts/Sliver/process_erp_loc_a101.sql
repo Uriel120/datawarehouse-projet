@@ -1,10 +1,18 @@
 
 /*
-This script processes the ERP location data from the bronze layer and loads it into the silver layer.
-It performs data cleaning and transformation, including:
-- Trimming whitespace
-- Replacing specific country codes with full names
-- Handling null or empty values
+------------------------------------------------------------------------------------
+Ce script traite les données de localisation ERP de la couche bronze et les charge dans la couche argent.
+------------------------------------------------------------------------------------
+    Created by: TOFFE GOKALE MICHEL
+    Date: 2023-10-01
+    Version: 1.0
+------------------------------------------------------------------------------------
+Il effectue le nettoyage et la transformation des données, y compris :
+
+- Suppression des espaces
+- Remplacement des codes de pays spécifiques par des noms complets
+- Gestion des valeurs nulles ou vides
+------------------------------------------------------------------------------------
 */
 
 

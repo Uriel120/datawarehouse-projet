@@ -4,7 +4,7 @@
                     sliver.crm_cust_info data quality check
 =======================================================================================================
 
-This script checks the data quality of the bronze.crm_cust_info , silver.crm_cust_info table and ensures that the data is accurate and consistent.
+Ce script vérifie la qualité des données des tables bronze.crm_cust_info et silver.crm_cust_info et s'assure que les données sont précises et cohérentes.
 */
 
 

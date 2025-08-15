@@ -1,12 +1,12 @@
 /*
 -------------------------------------------------------------------------------
 -- File: crm_sales_details.sql
--- Description: Tests for the silver.crm_sales_details table
+-- Description: Test de qualité pour la table silver.crm_sales_details
 ------------------------------------------------------------------------------- 
-Note: This script performs the following operations:
-1. Checks for additional spaces in varchar columns.
-2. Validates date fields to ensure they do not contain invalid values.
-3. Ensures that sales, quantity, and price fields are consistent and coherent.
+Note: Ce script effectue les opérations suivantes :
+1. Vérifie la présence d'espaces supplémentaires dans les colonnes varchar.
+2. Valide les champs de date pour s'assurer qu'ils ne contiennent pas de valeurs invalides.
+3. S'assure que les champs de vente, de quantité et de prix sont cohérents et cohérents.
 ------------------------------------------------------------------------------- 
 */
 
